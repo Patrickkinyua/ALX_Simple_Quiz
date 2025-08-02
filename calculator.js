@@ -40,7 +40,7 @@ document.getElementById("divide").addEventListener("click", function() {
     const num2 = parseFloat(document.getElementById("number2").value);
     const result = divide(num1, num2);
     if (num2 === 0) {
-        document.getElementById("calculation-result").innerText = "Cannot divide by zero";
+        document.getElementById("calculation-result").textContent = "Cannot divide by zero";
         return;
     }
     document.getElementById("calculation-result").innerText = result;
